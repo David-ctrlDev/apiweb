@@ -9,7 +9,7 @@ function HomePage(props) {
     const { token } = useParams();
     const clave = localStorage.getItem("token").toString()
     const valido = clave === token;
-    console.log(valido);
+
 
     return (
         <div>
