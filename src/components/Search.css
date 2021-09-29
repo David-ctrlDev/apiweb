@@ -28,6 +28,7 @@ h1 {
 }
 
 button {
+    width: 5% !important;
     height: 2em;
     margin-top: 1%;
 }
