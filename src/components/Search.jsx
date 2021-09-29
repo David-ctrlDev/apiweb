@@ -22,7 +22,7 @@ const handleClick2 = async ()=>{
     return (
         <div className="main-container">
             <h1>Productos más recientes</h1>
-            <button onClick={handleClick}>Buscar</button>
+            <button className ="search-button" onClick={handleClick}>Buscar</button>
             <div>{data.map((datoKey=>{
                return (<div  className= "product-card" key={datoKey}>
                             <h1 >{datoKey.nombre}</h1>
@@ -35,7 +35,7 @@ const handleClick2 = async ()=>{
                       </div> )  
             }))}
             </div>
-            <button onClick={handleClick2}>Ingresar</button>   
+            <button className ="search-button"onClick={handleClick2}>Ingresar</button>   
         </div>
     )
 }

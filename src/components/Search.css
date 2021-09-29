@@ -27,8 +27,8 @@ h1 {
     margin-bottom: 0%;
 }
 
-button {
-    width: 5% !important;
+.search-button {
+    width: 5%;
     height: 2em;
     margin-top: 1%;
 }
