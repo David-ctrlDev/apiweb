@@ -1,3 +1,4 @@
+
 import React from 'react';
 import singIn from '../functions/login'
 import './Login.css'
@@ -10,12 +11,17 @@ function Login() {
     
     let history = useHistory()
     const handleClick = async()=>{
-        const logeado = await singIn() 
-        logeado !== false ? localStorage.setItem("token", logeado): localStorage.removeItem("key");  ;
-        logeado !== false ? history.push(`/Home/${logeado}`) : alert("No te has logeado")
-
+        var logeado = await singIn()
+        //const logeadoJson = JSON.stringify(logeado)
+        //logeado = JSON.parse(logeadoJson)
+        logeado !== null || logeado !== undefined? logeado = logeado.reloadUserInfo.localId : logeado = false;
+        console.log(logeado);
+       
+        
+        logeado !== false ? history.push(`/Home/${logeado}`) : history.push(`/Register`)
+       
     }
-     
+   
     return (
         
         <div className="register-container">

@@ -1,5 +1,5 @@
 import singIn from '../functions/oAuth'
-import './Login.css'
+import './Register.css'
 import React from 'react'
 /*import {
     BrowserRouter as Router,
@@ -15,9 +15,10 @@ function Register() {
     }
     return (
         <div className="register-container">
-            <h1>TestapiApp</h1>
-            <input id ="email" type="text" placeholder="Mail"></input>
-            <input id = "password" type="text" placeholder="Password"></input>
+            <h1 className = "register-title">TestapiApp</h1>
+            <input id ="email" type="email" placeholder="Mail"></input>
+            <input id = "password" type="password" placeholder="Password"></input>
+            <input id = "name" type="text" placeholder="Name"></input>
             <button onClick={handleClick}>Sing up</button>
             <h2>Wellcome!!</h2>
             

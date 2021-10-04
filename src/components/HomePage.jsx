@@ -1,22 +1,25 @@
 import headerImage from '../assets/headerImage.svg'
 
 import React from 'react'
-import { Redirect, useParams } from 'react-router'
+import { Redirect} from 'react-router'
 
 
-function HomePage(props) {
-    //console.log(props)
-    const { token } = useParams();
-    const clave = localStorage.getItem("token").toString()
-    const valido = clave === token;
+
+function HomePage() {
+    
+    const clave = sessionStorage.key(0);
+    console.log(clave);
+
 
 
     return (
         <div>
-            {valido?
+            {clave!== null?
             <img src={headerImage} alt="headerImage" /> : <Redirect to ="/"></Redirect>}
+            <h1>{clave}</h1>
         </div>
     )
+   
 }
 
 export default HomePage
