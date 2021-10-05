@@ -31,7 +31,7 @@ export default async function singIn() {
     await signInWithEmailAndPassword(auth, email, password)
         .then(res => {
             user = res.user
-            console.log(user.displayName)
+
         })
         .catch(err => {
 

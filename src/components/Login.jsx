@@ -12,9 +12,8 @@ function Login() {
     let history = useHistory()
     const handleClick = async()=>{
         var logeado = await singIn()
-        //const logeadoJson = JSON.stringify(logeado)
-        //logeado = JSON.parse(logeadoJson)
-        logeado !== null || logeado !== undefined? logeado = logeado.reloadUserInfo.localId : logeado = false;
+    
+        logeado !== false? logeado = logeado.reloadUserInfo.localId : logeado = false;
         
         logeado !== false ? history.push(`/Home/${logeado}`) : history.push('/Register')
        
