@@ -32,13 +32,14 @@ export default async function createUser() {
     await createUserWithEmailAndPassword(auth, email, password)
         .then(res => {
             console.log("cargué")
+            updateProfile(auth.currentUser, {
+                displayName: name
+            })
         })
         .catch(err => {
             console.log(err.code)
         });
 
-    await updateProfile(auth.currentUser, {
-        displayName: name
-    })
+    return createUserWithEmailAndPassword
 
 }

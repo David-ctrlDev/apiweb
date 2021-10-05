@@ -1,6 +1,7 @@
-import singIn from '../functions/oAuth'
+//import singIn from '../functions/oAuth'
 import './Register.css'
 import React from 'react'
+import createUser from '../functions/oAuth'
 /*import {
     BrowserRouter as Router,
     Switch,
@@ -11,7 +12,7 @@ import React from 'react'
 function Register() {
     
     const handleClick = ()=>{
-    singIn()
+    createUser()
     }
     return (
         <div className="register-container">
