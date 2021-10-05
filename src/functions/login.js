@@ -27,20 +27,19 @@ export default async function singIn() {
     let email = document.getElementById("email").value
 
     let password = document.getElementById("password").value
+
     await signInWithEmailAndPassword(auth, email, password)
         .then(res => {
             user = res.user
+            console.log(user.displayName)
         })
         .catch(err => {
 
             user = false
         });
 
-    setPersistence(auth, browserSessionPersistence)
+    await setPersistence(auth, browserSessionPersistence)
         .then(() => {
-            let email = document.getElementById("email").values
-
-            let password = document.getElementById("password").value
 
             return signInWithEmailAndPassword(auth, email, password);
 

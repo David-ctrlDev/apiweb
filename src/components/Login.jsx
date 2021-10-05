@@ -15,10 +15,8 @@ function Login() {
         //const logeadoJson = JSON.stringify(logeado)
         //logeado = JSON.parse(logeadoJson)
         logeado !== null || logeado !== undefined? logeado = logeado.reloadUserInfo.localId : logeado = false;
-        console.log(logeado);
-       
         
-        logeado !== false ? history.push(`/Home/${logeado}`) : history.push(`/Register`)
+        logeado !== false ? history.push(`/Home/${logeado}`) : history.push('/Register')
        
     }
    
