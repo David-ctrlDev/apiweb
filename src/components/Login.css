@@ -1,4 +1,4 @@
-.register-container {
+.login-container {
     box-sizing: border-box;
     width: 20%;
     height: 40em;
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 800px) {
-    .register-container {
+    .login-container {
         width: 65%;
         height: 40em;
         margin-top: 20%;
@@ -22,37 +22,28 @@
 }
 
 @media (max-height:800px) {
-    .register-container {
+    .login-container {
         height: 32em;
         margin-top: 20%;
     }
 }
 
 @media (max-height:600px) {
-    .register-container {
+    .login-container {
         height: 28em;
         margin-top: 15%;
-    }
-}
-
-@media (max-height:900px) {
-    .register-container {
-        width: 70%;
-        height: 30em;
-        margin-top: 20%;
-        font-size: 1em;
     }
 }
 
 @media (max-height:1200px) and (max-width:1900px) and (min-width:500px) {
     .register-container {
         width: 40%;
-        height: 60em;
-        margin-top: 5%;
+        height: 20%;
+        margin-top: 55%;
     }
 }
 
-input {
+.login-input {
     margin-bottom: 5%;
     width: 60%;
     height: 5%;
@@ -66,7 +57,7 @@ input {
     padding-left: 5%;
 }
 
-button {
+.login-btn {
     margin-top: 10%;
     width: 60%;
     height: 8%;
@@ -81,21 +72,18 @@ button {
     cursor: pointer;
 }
 
-h1 {
+.login-h1 {
     margin-bottom: 10%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     color: #737070;
+    font-size: 2em;
 }
 
-h2 {
+.login-h2 {
     margin-top: 15%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     color: #737070;
     font-size: 1.2em;
-}
-
-span {
-    color: rgb(42, 42, 189);
 }

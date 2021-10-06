@@ -21,12 +21,12 @@ function Login() {
    
     return (
         
-        <div className="register-container">
-            <h1>TestapiApp</h1>
-            <input id ="email" type="mail" placeholder="Mail"></input>
-            <input id = "password" type="password" placeholder="Password"></input>
-            <button onClick={handleClick}>Login</button>
-            <h2>Don't have an account?<span><Link to ="Register"> Sing up</Link> </span></h2>
+        <div className="login-container">
+            <h1 className= "login-h1">TestapiApp</h1>
+            <input className = "login-input" id ="email" type="mail" placeholder="Mail"></input>
+            <input className = "login-input" id = "password" type="password" placeholder="Password"></input>
+            <button className = "login-btn" onClick={handleClick}>Login</button>
+            <h2 className = "login-h2">Don't have an account?<span><Link to ="Register"> Sing up</Link> </span></h2>
             
         </div>
         

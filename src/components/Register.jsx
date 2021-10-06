@@ -9,8 +9,7 @@ import createUser from '../functions/oAuth'
     Link
   } from "react-router-dom";
 */
-function Register() {
-    
+function Register() {   
     const handleClick = ()=>{
     createUser()
     }
@@ -22,9 +21,7 @@ function Register() {
             <input id = "name" type="text" placeholder="Name"></input>
             <button onClick={handleClick}>Sing up</button>
             <h2>Wellcome!!</h2>
-            
         </div>
     )
 }
-
 export default Register
