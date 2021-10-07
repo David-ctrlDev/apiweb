@@ -1,0 +1,10 @@
+.static-bar-container {
+    background: rgb(185, 172, 197);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    height: 5%;
+    opacity: 0.7;
+    display: flex;
+}
