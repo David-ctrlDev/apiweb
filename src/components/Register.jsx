@@ -1,6 +1,7 @@
-import singIn from '../functions/oAuth'
-import './Login.css'
+//import singIn from '../functions/oAuth'
+import './Register.css'
 import React from 'react'
+import createUser from '../functions/oAuth'
 /*import {
     BrowserRouter as Router,
     Switch,
@@ -8,21 +9,19 @@ import React from 'react'
     Link
   } from "react-router-dom";
 */
-function Register() {
-    
+function Register() {   
     const handleClick = ()=>{
-    singIn()
+    createUser()
     }
     return (
         <div className="register-container">
-            <h1>TestapiApp</h1>
-            <input id ="email" type="text" placeholder="Mail"></input>
-            <input id = "password" type="text" placeholder="Password"></input>
+            <h1 className = "register-title">TestapiApp</h1>
+            <input id ="email" type="email" placeholder="Mail"></input>
+            <input id = "password" type="password" placeholder="Password"></input>
+            <input id = "name" type="text" placeholder="Name"></input>
             <button onClick={handleClick}>Sing up</button>
             <h2>Wellcome!!</h2>
-            
         </div>
     )
 }
-
 export default Register

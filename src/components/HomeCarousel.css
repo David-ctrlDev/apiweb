@@ -1,0 +1,38 @@
+.firsImage {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height: 20em;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.main-carousel {
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: black;
+}
+
+@media (max-width:600px) {
+    .firsImage {
+        width: 80%;
+    }
+    .main-carousel {
+        max-width: 100%;
+    }
+}
+
+.main-carousel h3 {
+    font-weight: bolder;
+    font-size: 3em;
+    opacity: .8;
+}
+
+.main-carousel p {
+    font-weight: bolder;
+    font-size: 1.1em;
+    opacity: .8;
+}

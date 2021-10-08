@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 
 require("firebase/auth");
@@ -20,21 +20,26 @@ initializeApp(firebaseConfig);
 const auth = getAuth();
 
 
-export default function createUser() {
+export default async function createUser() {
 
     let email = document.getElementById("email").value
     alert(email)
     let password = document.getElementById("password").value
     alert(password)
+    let name = document.getElementById("name").value
 
 
-    createUserWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email, password)
         .then(res => {
             console.log("cargué")
+            updateProfile(auth.currentUser, {
+                displayName: name
+            })
         })
         .catch(err => {
             console.log(err.code)
         });
 
+    return createUserWithEmailAndPassword
 
 }

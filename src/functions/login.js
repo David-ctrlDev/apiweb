@@ -21,14 +21,20 @@ initializeApp(firebaseConfig);
 const auth = getAuth();
 
 var user = ""
+
 export default async function singIn() {
 
     let email = document.getElementById("email").value
 
     let password = document.getElementById("password").value
+
     await signInWithEmailAndPassword(auth, email, password)
         .then(res => {
+<<<<<<< HEAD
             user = res.user.auth.persistenceManager.fullUserKey
+=======
+            user = res.user
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
 
         })
         .catch(err => {
@@ -36,19 +42,27 @@ export default async function singIn() {
             user = false
         });
 
+<<<<<<< HEAD
     setPersistence(auth, browserSessionPersistence)
         .then(() => {
             let email = document.getElementById("email").value
 
             let password = document.getElementById("password").value
+=======
+    await setPersistence(auth, browserSessionPersistence)
+        .then(() => {
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
 
             return signInWithEmailAndPassword(auth, email, password);
 
         })
         .catch((error) => {
             // Handle Errors here.
+<<<<<<< HEAD
             const errorCode = error.code;
             const errorMessage = error.message;
+=======
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
         });
 
     return user

@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import Login from '../components/Login'
 import Register from '../components/Register'
-//import HomePage from "../Components/HomePage";
-import Search from '../components/Search'
+import HomePage from "../components/HomePage";
+//import Search from '../components/Search'
 
 export default function Routes() {
 
@@ -27,7 +27,7 @@ export default function Routes() {
         </Switch>
         <Switch>
           <Route exact path="/Home/:token">
-            <Search/>
+            <HomePage/>
           </Route>
         </Switch>
       </div>
