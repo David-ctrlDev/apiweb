@@ -4,10 +4,11 @@ import React from 'react'
 import { Redirect, useParams } from 'react-router'
 
 
-function HomePage(props) {
+function HomePage() {
     //console.log(props)
     const { token } = useParams();
-    const clave = localStorage.getItem("token").toString()
+    const clave = sessionStorage.getItem("Key")
+    console.log(clave);
     const valido = clave === token;
 
 

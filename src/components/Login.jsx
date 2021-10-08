@@ -11,7 +11,6 @@ function Login() {
     let history = useHistory()
     const handleClick = async()=>{
         const logeado = await singIn() 
-        logeado !== false ? localStorage.setItem("token", logeado): localStorage.removeItem("key");  ;
         logeado !== false ? history.push(`/Home/${logeado}`) : alert("No te has logeado")
 
     }

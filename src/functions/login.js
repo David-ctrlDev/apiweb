@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app'
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, setPersistence, signInWithEmailAndPassword, browserSessionPersistence } from "firebase/auth";
+
 
 
 require("firebase/auth");
@@ -27,11 +28,27 @@ export default async function singIn() {
     let password = document.getElementById("password").value
     await signInWithEmailAndPassword(auth, email, password)
         .then(res => {
-            user = res.user.uid
+            user = res.user.auth.persistenceManager.fullUserKey
+
         })
         .catch(err => {
 
             user = false
+        });
+
+    setPersistence(auth, browserSessionPersistence)
+        .then(() => {
+            let email = document.getElementById("email").value
+
+            let password = document.getElementById("password").value
+
+            return signInWithEmailAndPassword(auth, email, password);
+
+        })
+        .catch((error) => {
+            // Handle Errors here.
+            const errorCode = error.code;
+            const errorMessage = error.message;
         });
 
     return user
