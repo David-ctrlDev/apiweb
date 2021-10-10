@@ -5,18 +5,6 @@ import HomeCarousel from './HomeCarousel';
 import Staticbar from './Staticbar';
 
 
-
-<<<<<<< HEAD
-function HomePage() {
-    //console.log(props)
-    const { token } = useParams();
-    const clave = sessionStorage.getItem("Key")
-    console.log(clave);
-    const valido = clave === token;
-
-=======
->>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
-
 function HomePage() {
     
     const clave = sessionStorage.key(0);
