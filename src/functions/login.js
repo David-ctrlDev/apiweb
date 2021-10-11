@@ -30,7 +30,15 @@ export default async function singIn() {
 
     await signInWithEmailAndPassword(auth, email, password)
         .then(res => {
+<<<<<<< HEAD
             user = res.user
+=======
+<<<<<<< HEAD
+            user = res.user.auth.persistenceManager.fullUserKey
+=======
+            user = res.user
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
 
         })
         .catch(err => {
@@ -38,14 +46,35 @@ export default async function singIn() {
             user = false
         });
 
+<<<<<<< HEAD
     await setPersistence(auth, browserSessionPersistence)
         .then(() => {
+=======
+<<<<<<< HEAD
+    setPersistence(auth, browserSessionPersistence)
+        .then(() => {
+            let email = document.getElementById("email").value
+
+            let password = document.getElementById("password").value
+=======
+    await setPersistence(auth, browserSessionPersistence)
+        .then(() => {
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
 
             return signInWithEmailAndPassword(auth, email, password);
 
         })
         .catch((error) => {
             // Handle Errors here.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            const errorCode = error.code;
+            const errorMessage = error.message;
+=======
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
         });
 
     return user

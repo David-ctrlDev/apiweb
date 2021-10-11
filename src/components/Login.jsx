@@ -11,12 +11,24 @@ function Login() {
     
     let history = useHistory()
     const handleClick = async()=>{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        const logeado = await singIn() 
+        logeado !== false ? history.push(`/Home/${logeado}`) : alert("No te has logeado")
+
+=======
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
         var logeado = await singIn()
     
         logeado !== false? logeado = logeado.reloadUserInfo.localId : logeado = false;
         
         logeado !== false ? history.push(`/Home/${logeado}`) : history.push('/Register')
        
+<<<<<<< HEAD
+=======
+>>>>>>> 9fb99db829c58e342e48c9a15694b5ba33c778b8
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
     }
    
     return (

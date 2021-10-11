@@ -4,8 +4,11 @@ import { apiFetch } from '../functions/fetch';
 import HomeCarousel from './HomeCarousel';
 import Staticbar from './Staticbar';
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8b9908e04e234d8ebfef8f0c6f1ce0b490f9550f
 
 function HomePage() {
     
