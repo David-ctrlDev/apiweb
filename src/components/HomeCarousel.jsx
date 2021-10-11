@@ -13,6 +13,8 @@ function ControlledCarousel() {
         };
       
         return (
+         <> 
+         
           <Carousel className="main-carousel" variant="dark"  activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item onClick={()=>{
                 alert("Click")
@@ -54,6 +56,7 @@ function ControlledCarousel() {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
+        </>
         );
       }
 
