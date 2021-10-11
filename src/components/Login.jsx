@@ -15,7 +15,7 @@ function Login() {
     
         logeado !== false? logeado = logeado.reloadUserInfo.localId : logeado = false;
         
-        logeado !== false ? history.push(`/Home/${logeado}`) : history.push('/Register')
+        logeado !== false ? await history.push(`/Home/${logeado}`) : history.push('/Register')
        
     }
    

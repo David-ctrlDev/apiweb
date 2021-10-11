@@ -3,6 +3,9 @@ import { Redirect} from 'react-router'
 //import { apiFetch } from '../functions/fetch';
 import HomeCarousel from './HomeCarousel';
 import Staticbar from './Staticbar';
+import homeimage from '../assets/homeImage.jpg'
+import  './HomePage.css'
+
 
 
 
@@ -21,6 +24,7 @@ function HomePage() {
             <>
             <Staticbar/>
             <div>
+                <img className = "homeImage" src={homeimage} alt="imagen del homepage" />
                 <HomeCarousel/>  
                   
             </div>
