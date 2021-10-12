@@ -5,6 +5,7 @@ import HomeCarousel from './HomeCarousel';
 import Staticbar from './Staticbar';
 import homeimage from '../assets/homeImage.jpg'
 import  './HomePage.css'
+import GridProduct from './GridProduct'
 
 
 
