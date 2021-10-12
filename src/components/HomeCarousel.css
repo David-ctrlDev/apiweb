@@ -14,8 +14,7 @@
     max-width: 80%;
     display: flex;
     margin: 0 auto;
-    margin-top: -5%;
-    color: black;
+    margin-top: -15%;
 }
 
 @media (max-width:600px) {
@@ -35,7 +34,7 @@
     font-weight: bolder;
     font-size: 3em;
     opacity: .8;
-    color: rgb(8, 0, 1)
+    color: rgb(255, 255, 255)
 }
 
 .main-carousel p {
