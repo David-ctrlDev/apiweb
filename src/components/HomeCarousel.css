@@ -1,24 +1,30 @@
-.firsImage {
+.firsImage,
+.secondImage,
+.thirthImage {
     display: flex;
     margin: 0 auto;
-    width: 70%;
-    height: 20em;
+    width: 25%;
+    height: 30em;
     align-items: center;
     cursor: pointer;
     border-radius: 5%;
+    opacity: 0.9;
 }
 
 .main-carousel {
     max-width: 80%;
     display: flex;
     margin: 0 auto;
-    margin-top: -5%;
-    color: black;
+    margin-top: -15%;
+    color: white;
 }
 
 @media (max-width:600px) {
-    .firsImage {
-        width: 80%;
+    .firsImage,
+    .secondImage,
+    .thirthImage {
+        width: 60%;
+        height: 20em;
     }
     .main-carousel {
         max-width: 100%;
@@ -30,10 +36,13 @@
     font-weight: bolder;
     font-size: 3em;
     opacity: .8;
+    color: rgb(8, 0, 1)
 }
 
 .main-carousel p {
     font-weight: bolder;
     font-size: 1.1em;
     opacity: .8;
+    color: #ffff;
+    bottom: -50%;
 }

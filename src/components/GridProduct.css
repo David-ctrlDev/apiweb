@@ -1,0 +1,31 @@
+.products-grid {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.card-01 {
+    background-color: black;
+    width: 20em;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.card-02 {
+    background-color: yellow;
+    width: 20em;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.card-03 {
+    background-color: blue;
+    width: 20em;
+    height: 200px;
+    border-radius: 5%;
+}
