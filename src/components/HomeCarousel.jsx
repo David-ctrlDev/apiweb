@@ -13,7 +13,7 @@ function ControlledCarousel() {
         };
       
         return (
-          <Carousel className="main-carousel" variant="dark" interval ={null} activeIndex={index} onSelect={handleSelect}>
+          <Carousel className="main-carousel" variant="dark" activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item onClick={()=>{
                 alert("Click")
             }} className = "first-slide">
