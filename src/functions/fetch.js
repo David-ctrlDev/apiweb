@@ -7,7 +7,7 @@ async function apiFetch(id) {
             'Permissions-Policy': 'interest-cohort=()'
         }
     }
-    const url = 'http://127.0.0.1:5000/goals/ ?id=OCPmT3IqxUOzj2L6hm8kBn1nyYg2' //`https://daviddev123.pythonanywhere.com/goals/ ?id=${id}`
+    const url = 'http://127.0.0.1:5000/books' //`https://daviddev123.pythonanywhere.com/goals/ ?id=${id}`
     const resp = await fetch(url, requestOptions)
     const data = await resp.json()
     console.log(data)

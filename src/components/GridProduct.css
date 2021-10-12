@@ -1,0 +1,59 @@
+.products-grid {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-01 {
+    background-color: black;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}
+
+.card-02 {
+    background-color: yellow;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}
+
+.card-03 {
+    background-color: blue;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}
+
+.card-04 {
+    background-color: blue;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}
+
+.card-05 {
+    background-color: blue;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}
+
+.card-06 {
+    background-color: blue;
+    width: 10em;
+    height: 200px;
+    border-radius: 5%;
+    margin: 5% auto;
+}

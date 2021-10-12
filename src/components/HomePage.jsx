@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import { Redirect} from 'react-router'
 //import { apiFetch } from '../functions/fetch';
 import HomeCarousel from './HomeCarousel';
@@ -26,7 +26,7 @@ function HomePage() {
             <div>
                 <img className = "homeImage" src={homeimage} alt="imagen del homepage" />
                 <HomeCarousel/>  
-                  
+                <GridProduct />  
             </div>
             </>
             : <Redirect to ="/"></Redirect>}
