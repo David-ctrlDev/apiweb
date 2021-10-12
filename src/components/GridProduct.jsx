@@ -13,6 +13,15 @@ function GridProduct() {
             </div>
             <div  className="card-03">
                 
+                </div>
+            <div  className="card-04">
+                
+            </div>
+            <div  className="card-05">
+                
+            </div>
+            <div  className="card-06">
+                
             </div>
         </div>
     )

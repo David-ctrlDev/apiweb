@@ -14,3 +14,10 @@
     font-size: 1.5rem;
     width: 80%;
 }
+
+@media (max-width:600px) {
+    .static-bar-container h1 {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
